@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+  function mostrarImagen(src) {
+    document.getElementById("modal-img").src = src;
+    document.getElementById("modal").style.display = "flex";
+  }
+
+  function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+</script>
+  <meta charset="UTF-8">
+  <title>Catálogo Nike 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e2a38;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .producto {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 15px;
+      text-align: center;
+    }
+    .info h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #1e2a38;
+    }
+    .info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .precio {
+      font-weight: bold;
+      color: #e63946;
+    }
+    .tallas {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .tallas label {
+      margin-right: 5px;
+    }
+    .tallas select {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catalogo Koos</h1>
+    <p>Tallas disponibles: 25–30
+      Se actualizara constantemente
+    </p>
+  </header>
+
+  <div class="catalogo">
+    <div class="producto">
+      <img src="https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07_V2-Product.jpg" alt="Nike Air Force 1 '07"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Air Force 1 '07 Blanco</h3>
+        <p class="precio">$1,00 MXN</p>
+        <div class="tallas">
+          <label for="talla-af1">Talla:</label>
+          <select id="talla-af1">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://resources.claroshop.com/medios-plazavip/s2/10687/1347882/5e6a7b8367dc1-6bf6d9fd-8a4d-4fd5-8d1e-2aac90093731-1600x1600.jpg" alt="Nike Court Vision Low"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Court Vision Low Blanco</h3>
+        <p class="precio">$899 MXN</p>
+        <div class="tallas">
+          <label for="talla-court">Talla:</label>
+          <select id="talla-court">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://cdn-images.farfetch-contents.com/19/06/44/52/19064452_41597272_1000.jpg" alt="Nike Air Monarch IV"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Air Monarch IV Blanco</h3>
+        <p class="precio">$1,000 MXN</p>
+        <div class="tallas">
+          <label for="talla-monarch">Talla:</label>
+          <select id="talla-monarch">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://cdn.baguer.co/uploads/2023/11/tenis-w-blazer-mid-77-nike-blanco-120643BL.jpg_vqdIvRChpGvuhAjbqeNKi2uAQ3ly6lCpsp9PKhOwuKMo2T5xda.jpg" alt="Nike Blazer Mid '77"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Blazer Mid '77 Blanco</h3>
+        <p class="precio">$900 MXN</p>
+        <div class="tallas">
+          <label for="talla-blazer">Talla:</label>
+          <select id="talla-blazer">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7fcafee2-7416-44f2-a0bc-0f34d1f6c8a2/WMNS+AIR+JORDAN+1+MID.png" alt="Air Jordan 1 Mid Blanco"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Air Jordan 1 Mid Blanco</h3>
+        <p class="precio">$1,499 MXN</p>
+        <div class="tallas">
+          <label for="talla-jordan">Talla:</label>
+          <select id="talla-jordan">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="producto">
+      <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/a1901657-1d23-4c88-a8c9-d443e23da0f7/PHANTOM+6+LOW+ELITE+FG+NU2.png  " alt="Air Jordan 1 Mid Blanco"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Nike Unite Phantom 6 Low Elite
+Tacos de fútbol para terreno firme</h3>
+        <p class="precio">$1,499 MXN</p>
+        <div class="tallas">
+          <label for="talla-jordan">Talla:</label>
+          <select id="talla-jordan">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="producto">
+      <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8381b143-d46d-4354-b2e2-78a5b5917934/AIR+JORDAN+1+LOW+SE.png" alt="Air Jordan 1 Mid Blanco"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+
+      <div class="info">
+        <h3>Air Jordan 1 Low SE</h3>
+        <p class="precio">$1,499 MXN</p>
+        <div class="tallas">
+          <label for="talla-jordan">Talla:</label>
+          <select id="talla-jordan">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="seccion">
+  <h2>🧢 Catálogo Converse 2025</h2>
+  <div class="catalogo">
+    <div class="producto">
+      <img src="data:image/webp;base64,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" alt="Chuck Taylor All Star Classic"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Chuck Taylor All Star Classic</h3>
+        <p class="precio">$1,299 MXN</p>
+        <div class="tallas">
+          <label for="talla-chuck">Talla:</label>
+          <select id="talla-chuck">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTuIA8Ydv-5OgdMbbaMPshTXlGdgfMoa86YchRZLUz3WnagDOidQ1MGCMugE8YCC9UxD1RZQD2yfxOc6APpAaO8cA4oBE7Y7ZDTO8Aj1W1lU_2xkMtjnA_pMHdDV59813bnA7G9oS8&usqp=CAc" alt="Run Star Hike High"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Run Star Hike High</h3>
+        <p class="precio">$2,499 MXN</p>
+        <div class="tallas">
+          <label for="talla-hike">Talla:</label>
+          <select id="talla-hike">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRul2A1OZlRBBeceBI_hSoWCqfMq3789QNKQbMy9FaxpAX6zZPvqL_YfbT2pk9h2kFGXrrZKjPnWk-Oinh3XRyD4JMSukOWDi_rFPCjI42LTSzhTeGH0CyFrg" alt="Chuck 70 Vintage Canvas"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Chuck 70 Vintage Canvas</h3>
+        <p class="precio">$1,899 MXN</p>
+        <div class="tallas">
+          <label for="talla-vintage">Talla:</label>
+          <select id="talla-vintage">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://converse.com.mx/media/catalog/product/c/o/converse-run-star-legacy-cx-piel-dama-bota-negro-a05112c-3_vdngf1ykxzqudzqb.jpg" alt="Run Star Legacy CX"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Run Star Legacy CX</h3>
+        <p class="precio">$2,799 MXN</p>
+        <div class="tallas">
+          <label for="talla-legacy">Talla:</label>
+          <select id="talla-legacy">
+            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="seccion">
+  <h2>👖 Pantalones Levi’s de Mezclilla 2025</h2>
+  <div class="catalogo">
+
+    <!-- Modelo 1 -->
+    <div class="producto">
+      <img src="https://i.pinimg.com/originals/6f/92/a7/6f92a72b0a385633fbd5f79722349331.jpg" alt="Mile High Super Skinny Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Mile High Super Skinny Mujer</h3>
+        <p class="precio">$1,099 MXN</p>
+        <div class="tallas">
+          <label for="talla-mile">Talla:</label>
+          <select id="talla-mile">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 2 -->
+    <div class="producto">
+      <img src="https://lsco.vtexassets.com/arquivos/ids/268303-800-auto?v=638854553121730000" alt="721 High Rise Skinny Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>721 High Rise Skinny Mujer</h3>
+        <p class="precio">$1,199 MXN</p>
+        <div class="tallas">
+          <label for="talla-721">Talla:</label>
+          <select id="talla-721">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 3 -->
+    <div class="producto">
+      <img src="https://i.pinimg.com/736x/fc/d5/9e/fcd59e2eceb03040ac10da54534d4a10.jpg" alt="Wedgie Straight Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Wedgie Straight Mujer</h3>
+        <p class="precio">$1,299 MXN</p>
+        <div class="tallas">
+          <label for="talla-wedgie">Talla:</label>
+          <select id="talla-wedgie">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 4 -->
+    <div class="producto">
+      <img src="https://m.media-amazon.com/images/I/61Z585vgNxL._AC_SX679_.jpg" alt="Ribcage Bells Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>Ribcage Bells Mujer</h3>
+        <p class="precio">$1,449 MXN</p>
+        <div class="tallas">
+          <label for="talla-ribcage">Talla:</label>
+          <select id="talla-ribcage">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 5 -->
+    <div class="producto">
+      <img src="https://resources.sears.com.mx/imgsplaza-sears/sears/?tp=f&id=3573414&t=original&scale=500&qlty=75" alt="314 Shaping Straight Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>314 Shaping Straight Mujer</h3>
+        <p class="precio">$1,199 MXN</p>
+        <div class="tallas">
+          <label for="talla-314">Talla:</label>
+          <select id="talla-314">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 6 -->
+    <div class="producto">
+      <img src="https://resources.sears.com.mx/imgsplaza-sears/sears/?tp=f&id=3701238&t=original&scale=500&qlty=75" alt="725 Bootcut Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>725 Bootcut Cintura Alta Mujer</h3>
+        <p class="precio">$1,299 MXN</p>
+        <div class="tallas">
+          <label for="talla-725">Talla:</label>
+          <select id="talla-725">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 7 -->
+    <div class="producto">
+      <img src="https://levisarg.vtexassets.com/arquivos/ids/595320/272_6310356b99f29.jpg?v=637976703836000000" alt="501 Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>501 Original Mujer</h3>
+        <p class="precio">$1,399 MXN</p>
+        <div class="tallas">
+          <label for="talla-501w">Talla:</label>
+          <select id="talla-501w">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 8 -->
+    <div class="producto">
+      <img src="https://i.pinimg.com/originals/d7/a9/f8/d7a9f8427189f24e7edf7b0f8848ebfe.jpg" alt="711 Skinny Mujer"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>711 Skinny Light Wash Mujer</h3>
+        <p class="precio">$1,099 MXN</p>
+        <div class="tallas">
+          <label for="talla-711">Talla:</label>
+          <select id="talla-711">
+            <option>26</option><option>28</option><option>30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 9 -->
+    <div class="producto">
+      <img src="https://lamarinamx.vtexassets.com/arquivos/ids/540408/2669130_2.jpg" alt="505 Regular Fit Hombre"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>505 Regular Fit Hombre</h3>
+        <p class="precio">$749 MXN</p>
+        <div class="tallas">
+          <label for="talla-505">Talla:</label>
+          <select id="talla-505">
+               <option>28</option>
+    <option>30</option>
+    <option>32</option>
+    <option>34</option>
+    <option>36</option>
+    <option>38</option>
+    <option>40</option>
+    <option>42</option>
+    <option>44</option>
+    <option>46</option>
+    <option>48</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 10 -->
+    <div class="producto">
+      <img src="https://leviscl.vtexassets.com/arquivos/18_H2_FITNAV_510SKINNY_M_0167.jpg" alt="510 Skinny Hombre"onclick="mostrarImagen(this.src)" style="cursor:pointer;">
+      <div class="info">
+        <h3>510 Skinny Hombre</h3>
+        <p class="precio">$1,299 MXN</p>
+        <div class="tallas">
+          <label for="talla-510">Talla:</label>
+          <select id="talla-510">
+                <option>28</option>
+    <option>30</option>
+    <option>32</option>
+    <option>34</option>
+    <option>36</option>
+    <option>38</option>
+    <option>40</option>
+    <option>42</option>
+    <option>44</option>
+    <option>46</option>
+    <option>48</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puedes duplicar este bloque y cambiar imagen, nombre, precio y tallas para completar los 20 modelos -->
+  </div>
+</div>
+<!-- Modal para mostrar imagen ampliada -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+  <span onclick="cerrarModal()" style="position:absolute; top:20px; right:30px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+  <img id="modal-img" src="" alt="Vista ampliada" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+  <header>
+    <h1>Catalogo Koos</h1>
+    <p>Preguntas a este correo :Josemanuelmiguelmorales@gmail.com
+    </p>
+  </header>
+
+</body>
+</html>
